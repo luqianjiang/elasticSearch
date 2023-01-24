@@ -229,7 +229,7 @@ public class EsTest_Doc_Query {
 //            System.out.println(hit.getSourceAsString());
 //        }
 
-        System.out.println("======================================++++");
+        System.out.println("======================================");
         // 分组查询
         SearchRequest request = new SearchRequest();
         request.indices("user");
