@@ -16,16 +16,14 @@ public class EsTest_Index_Create {
                 RestClient.builder(new HttpHost("localhost", 9200, "http"))
         );
 
-        // 查询索引
-        GetIndexRequest request = new GetIndexRequest("user");
-        GetIndexResponse getIndexResponse = esClient.indices().get(request, RequestOptions.DEFAULT);
-
-        // 响应信息
-        System.out.println(getIndexResponse.getAliases());//获取别名
-        System.out.println(getIndexResponse.getMappings());
-        System.out.println(getIndexResponse.getSettings());
+        CreateIndexRequest request = new CreateIndexRequest("user");
+        CreateIndexResponse createIndexResponse = esClient.indices().create(request, RequestOptions.DEFAULT);
+        // 响应状态
+        boolean acknowledged = createIndexResponse.isAcknowledged();
+        System.out.println("索引操作"+acknowledged);
 
         // 关闭客户端
         esClient.close();
     }
 }
+

@@ -13,6 +13,7 @@ public class EsTest_Client {
                 RestClient.builder(new HttpHost("localhost", 9200, "http"))
         );
 
+        // 关闭ES客户端
         esClient.close();
     }
 }
