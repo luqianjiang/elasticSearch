@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="499209ec-43f0-45da-9a5d-1cc81fe10dac" name="Default" comment="">
+    <list default="true" id="499209ec-43f0-45da-9a5d-1cc81fe10dac" name="Default" comment="测试推送">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es-test/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/es-test/src/main/resources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/es-test/src/main/java/com/atguigu/es/test/EsTest_Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/es-test/src/main/java/com/atguigu/es/test/EsTest_Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/es-test/src/main/java/com/atguigu/es/test/EsTest_Doc_Delete.java" beforeDir="false" afterPath="$PROJECT_DIR$/es-test/src/main/java/com/atguigu/es/test/EsTest_Doc_Delete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/es-test/src/main/java/com/atguigu/es/test/EsTest_Doc_Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/es-test/src/main/java/com/atguigu/es/test/EsTest_Doc_Query.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/es-test/target/classes/com/atguigu/es/test/EsTest_Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/es-test/target/classes/com/atguigu/es/test/EsTest_Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/es-test/target/classes/com/atguigu/es/test/EsTest_Doc_Query.class" beforeDir="false" afterPath="$PROJECT_DIR$/es-test/target/classes/com/atguigu/es/test/EsTest_Doc_Query.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/es-test/target/classes/com/atguigu/es/test/EsTest_Index_Create.class" beforeDir="false" afterPath="$PROJECT_DIR$/es-test/target/classes/com/atguigu/es/test/EsTest_Index_Create.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +30,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -34,22 +50,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "D:/BaiduNetdiskDownload/尚硅谷/尚硅谷项目课程系列之Elasticsearch/代码/es-test",
+    "settings.editor.selected.configurable": "MavenSettings"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.atguigu.es.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EsTest_Index_Create">
+  <component name="RunManager" selected="Application.EsTest_Doc_Query">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -57,8 +77,8 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="EsTest_Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.es.test.EsTest_Client" />
+    <configuration name="EsTest_Doc_Delete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.es.test.EsTest_Doc_Delete" />
       <module name="es-test" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -73,6 +93,20 @@
     </configuration>
     <configuration name="EsTest_Doc_Delete_Batch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.es.test.EsTest_Doc_Delete_Batch" />
+      <module name="es-test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.es.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EsTest_Doc_Get" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.es.test.EsTest_Doc_Get" />
       <module name="es-test" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -101,20 +135,6 @@
     </configuration>
     <configuration name="EsTest_Doc_Query" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.es.test.EsTest_Doc_Query" />
-      <module name="es-test" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.es.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EsTest_Index_Create" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.es.test.EsTest_Index_Create" />
       <module name="es-test" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -159,22 +179,23 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.EsTest_Doc_Delete" />
+      <item itemvalue="Application.EsTest_Doc_Get" />
       <item itemvalue="Application.EsTest_Doc_Insert_Batch" />
       <item itemvalue="Application.EsTest_Doc_Delete_Batch" />
       <item itemvalue="Application.EsTest_Doc_Query" />
-      <item itemvalue="Application.EsTest_Client" />
-      <item itemvalue="Application.EsTest_Index_Create" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EsTest_Index_Create" />
-        <item itemvalue="Application.EsTest_Client" />
         <item itemvalue="Application.EsTest_Doc_Query" />
         <item itemvalue="Application.EsTest_Doc_Insert_Batch" />
         <item itemvalue="Application.EsTest_Doc_Delete_Batch" />
+        <item itemvalue="Application.EsTest_Doc_Delete" />
+        <item itemvalue="Application.EsTest_Doc_Get" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -193,6 +214,7 @@
       <workItem from="1674224945716" duration="629000" />
       <workItem from="1678519688004" duration="8000" />
       <workItem from="1709645695484" duration="1652000" />
+      <workItem from="1709705251479" duration="7225000" />
     </task>
     <task id="LOCAL-00001" summary="api操作es">
       <created>1673618483491</created>
@@ -212,18 +234,27 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="api操作es" />
     <MESSAGE value="测试推送" />
     <option name="LAST_COMMIT_MESSAGE" value="测试推送" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="821" y="413" width="277" height="281" key="Github.ShareDialog" timestamp="1709652310982">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="821" y="413" width="277" height="281" key="Github.ShareDialog/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1709652310982" />
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -234,14 +265,19 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/es-test/src/main/java/com/atguigu/es/test/EsTest_Doc_Insert_Batch.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/7.8.0/elasticsearch-7.8.0.jar!/org/elasticsearch/action/index/IndexRequest.class</url>
           <line>348</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/es-test/src/main/java/com/atguigu/es/test/EsTest_Doc_Insert.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/es-test/src/main/java/com/atguigu/es/test/EsTest_Doc_Query.java</url>
+          <line>238</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

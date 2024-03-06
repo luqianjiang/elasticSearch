@@ -13,6 +13,7 @@ import org.elasticsearch.index.query.*;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
 import org.elasticsearch.search.aggregations.AggregationBuilders;
+import org.elasticsearch.search.aggregations.metrics.Max;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.elasticsearch.search.fetch.subphase.FetchSourceContext;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
@@ -28,7 +29,7 @@ public class EsTest_Doc_Query {
 //        // 查询索引中全部数据
 //        SearchRequest request = new SearchRequest();
 //        request.indices("user");
-//        // 查询条件
+//        // 全量查询条件
 //        request.source(new SearchSourceBuilder().query(QueryBuilders.matchAllQuery()));
 //
 //        SearchResponse response = esClient.search(request, RequestOptions.DEFAULT);
@@ -100,7 +101,7 @@ public class EsTest_Doc_Query {
 
 
         System.out.println("======================================");
-//
+
 //        // 过滤字段
 //        SearchRequest request = new SearchRequest();
 //        request.indices("user");
@@ -109,7 +110,7 @@ public class EsTest_Doc_Query {
 //        builder.size(4);
 //        String[] include={"name"};
 //        String[] exclude={};
-//        builder.fetchSource(include,exclude);
+//        builder.fetchSource(include,exclude); //过滤条件
 //        request.source(builder);
 //
 //        SearchResponse response = esClient.search(request, RequestOptions.DEFAULT);
@@ -124,7 +125,7 @@ public class EsTest_Doc_Query {
 
         System.out.println("======================================");
 
-//        // 组合查询
+//        // 组合查询 must： 必须条件 should: or条件
 //        SearchRequest request = new SearchRequest();
 //        request.indices("user");
 //        SearchSourceBuilder builder = new SearchSourceBuilder();
@@ -144,6 +145,8 @@ public class EsTest_Doc_Query {
 //        }
 
         System.out.println("======================================");
+
+
 //        // 范围查询
 //        SearchRequest request = new SearchRequest();
 //        request.indices("user");
@@ -163,13 +166,15 @@ public class EsTest_Doc_Query {
 //        }
 
 
-//        System.out.println("======================================");
+        System.out.println("======================================");
+
+
 //        // 模糊查询
 //        SearchRequest request = new SearchRequest();
 //        request.indices("user");
 //        SearchSourceBuilder builder = new SearchSourceBuilder();
 //        // 差一个可以匹配成功 fuzziness(Fuzziness.ONE)
-//        FuzzyQueryBuilder fuzzyQuery = QueryBuilders.fuzzyQuery("name", "wangwu").fuzziness(Fuzziness.ONE);
+//        FuzzyQueryBuilder fuzzyQuery = QueryBuilders.fuzzyQuery("name", "wangwu").fuzziness(Fuzziness.ONE); // 差一个可以匹配成功
 //        builder.query(fuzzyQuery);
 //        request.source(builder);
 //        SearchResponse response = esClient.search(request, RequestOptions.DEFAULT);
@@ -182,6 +187,7 @@ public class EsTest_Doc_Query {
 //        }
 
         System.out.println("======================================");
+
 //        // 高亮查询
 //        SearchRequest request = new SearchRequest();
 //        request.indices("user");
@@ -211,25 +217,33 @@ public class EsTest_Doc_Query {
 
 
         System.out.println("======================================");
+
 //        // 聚合查询
 //        SearchRequest request = new SearchRequest();
 //        request.indices("user");
 //        SearchSourceBuilder builder = new SearchSourceBuilder();
 //        // maxAge是别名，age是哪个字段求最大值
 //        builder.aggregation(AggregationBuilders.max("maxAge").field("age"));
-//
+//        // 设置size为0，因为我们只关心聚合结果
+//        builder.size(0);
 //
 //        request.source(builder);
 //        SearchResponse response = esClient.search(request, RequestOptions.DEFAULT);
 //
+//        // 从响应中提取聚合结果
+//        Max maxAge = response.getAggregations().get("maxAge");
+//        double maxValue = maxAge.getValue();
+//        System.out.println("最大的年龄是: " + maxValue);
+//
 //        // 匹配的数据
-//        SearchHits hits = response.getHits();
-//        System.out.println(hits.getTotalHits());
-//        for (SearchHit hit: hits) {
-//            System.out.println(hit.getSourceAsString());
-//        }
+////        SearchHits hits = response.getHits();
+////        System.out.println(hits.getTotalHits());
+////        for (SearchHit hit: hits) {
+////            System.out.println(hit.getSourceAsString());
+////        }
 
         System.out.println("======================================");
+
         // 分组查询
         SearchRequest request = new SearchRequest();
         request.indices("user");

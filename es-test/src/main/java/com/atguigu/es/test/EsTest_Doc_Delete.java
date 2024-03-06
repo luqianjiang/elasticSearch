@@ -18,7 +18,7 @@ public class EsTest_Doc_Delete {
 
         DeleteRequest request = new DeleteRequest();
         request.index("user").id("1001");
-        // 查询数据
+        // 删除数据
         DeleteResponse response = esClient.delete(request, RequestOptions.DEFAULT);
 
         System.out.println(response.toString());
