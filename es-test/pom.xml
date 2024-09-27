@@ -20,7 +20,7 @@
         <dependency>
             <groupId>org.elasticsearch.client</groupId>
             <artifactId>elasticsearch-rest-high-level-client</artifactId>
-            <version>7.8.0</version>
+            <version>7.17.13</version>
         </dependency>
         <!-- elasticsearch 依赖 2.x 的 log4j -->
         <dependency>
